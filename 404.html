@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-      // Redirect all 404s to index.html
-      window.location.href = "/";
+      // Redirect all requests to index.html
+      var redirectTo = window.location.protocol + "//" + window.location.host + "/My-portfolio/";
+      window.location.replace(redirectTo);
     </script>
   </head>
   <body>
